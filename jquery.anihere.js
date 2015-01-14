@@ -59,7 +59,6 @@ Copyright (c) 2014 SaliproPham
                 $(this.element).toggleClass(aniName + ' animated');
                 },{offset: obj.options.offset}
             );
-            console.log(obj.options.offset);             
         }
 
         window.jQuery && (jQuery.fn.anihere = function(options) {return new AniHere( this, options)});

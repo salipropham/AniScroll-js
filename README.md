@@ -42,3 +42,7 @@ $().anihere({
     offset: '90%'  /*offset option of Waypoint plugin*/
 });
 ```
+HTML code
+```html
+<div class="anihere" data-anihere="fadeIn">...</div>
+```

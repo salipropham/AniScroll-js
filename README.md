@@ -39,7 +39,8 @@ With configs
 $().anihere({
     useImageloaded: false,  /*use combine ImageLoaded plugin*/
     useDetector: true,  /*detect whether browser is support css animation or not*/
-    offset: '90%'  /*offset option of Waypoint plugin*/
+    loop: true,     /* animation every scroll or first times*/
+    offset: '95%'  /*offset option of Waypoint plugin*/
 });
 ```
 HTML code

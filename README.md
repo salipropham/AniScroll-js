@@ -47,3 +47,10 @@ HTML code
 ```html
 <div class="anihere" data-anihere="fadeIn">...</div>
 ```
+
+Custom duration, delay animation with HTML5
+```html
+<div class="anihere" data-anihere="fadeIn" data-anihere-delay="2x" data-anihere-duration="2x"></div>
+```
+Duration value `0x, 2x, 3x, 4x` default is `1x`, Delay `1x, 2x, 3x, 4x`.
+

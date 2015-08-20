@@ -1,6 +1,6 @@
-# sAnihere-js
+# sAniScroll-js
 A jquery plugin to show DOM element in viewport with css animation.  
-Demo: https://github.com/salipro4ever
+Demo: http://salipropham.github.io
 
 ### Required
 * `Animate.css` by *[Daniel Eden](http://daneden.github.io/animate.css/)*.
@@ -11,46 +11,38 @@ Thank all!
 ### Install
 Embed all required libs in `head` tag.
 ```html
-<link type="text/css" rel="stylesheet" href="assets/css/animate.min.css" />
-<script type="text/javascript" src="assets/js/noframework.waypoints.min.js"></script>
+<link type="text/css" rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css" />
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="jquery.aniscroll.min.js"></script>
 ```
 
-If you use config `useDetector = true` (default), should add following style:
-```css
-.cssanimations .anihere {
-    opacity: 0;
-    visibility: hidden;   
-}
-.cssanimations .anihere.animated {
-    opacity: 1;
-    visibility: visible;    
-}
-```
+If you use config `useDetector = true` (default), `.cssanimations` class will be added in DOM:
+
 
 ### Usage
 Simple without config:
 ```js
 jQuery(function($){
-  $().anihere();
+  $().aniscroll();
 });
 ```
 With configs
 ```javascript
 $().anihere({
-    useImageloaded: false,  /*use combine ImageLoaded plugin*/
-    useDetector: true,  /*detect whether browser is support css animation or not*/
-    loop: true,     /* animation every scroll or first times*/
-    offset: '95%'  /*offset option of Waypoint plugin*/
+    useImageloaded: false, /*use combine ImageLoaded plugin */
+    useDetector: true, /*detect whether browser is support css animation or not */
+    aniClass: 'animated', /* belong to animate.css */
+    loop: false, /* animation every scroll or first times */
+    mobile: false, /* allow aniscroll working on mobile */
+    offset: '95%' /*offset option of Waypoint plugin*/
 });
 ```
 HTML code
 ```html
-<div class="anihere" data-anihere="fadeIn">...</div>
+<div data-as="fadeIn">...</div>
 ```
 
 Custom duration, delay animation with HTML5
 ```html
-<div class="anihere" data-anihere="fadeIn" data-anihere-delay="2x" data-anihere-duration="2x"></div>
+<div data-as="fadeIn" data-as-duration="1.2s" data-as-delay=".2s" data-as-iteration="3"></div>
 ```
-Duration value `0x, 2x, 3x, 4x` default is `1x`, Delay `1x, 2x, 3x, 4x`.
-

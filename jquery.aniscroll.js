@@ -1,5 +1,5 @@
 /*!
-    sAniScroll - https://github.com/salipropham/sAnihere-js
+    sAniScroll - https://github.com/salipropham/AniScroll-js
     MIT license - http://opensource.org/licenses/MIT
     Copyright (c) 2014 SaliproPham
     */

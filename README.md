@@ -1,6 +1,8 @@
 # sAniScroll-js
 A jquery plugin to show DOM element in viewport with css animation.  
-Demo: http://salipropham.github.io
+Demo: 
+- http://salipropham.github.io
+- http://shop.suga.vn/sgbox
 
 ### Required
 * `Animate.css` by *[Daniel Eden](http://daneden.github.io/animate.css/)*.
